@@ -11,6 +11,13 @@
 		7B2414F62561551D00E3833C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2414F52561551D00E3833C /* ContentView.swift */; };
 		7B2414F82561552200E3833C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B2414F72561552200E3833C /* Assets.xcassets */; };
 		7B2414FB2561552200E3833C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B2414FA2561552200E3833C /* Preview Assets.xcassets */; };
+		7B274009256CE1CB00CE799B /* searchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B274008256CE1CB00CE799B /* searchBar.swift */; };
+		7B567569256A0DB300EE237E /* pieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B567568256A0DB300EE237E /* pieChartView.swift */; };
+		7B56756D256A0DFA00EE237E /* barGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B56756C256A0DFA00EE237E /* barGraphView.swift */; };
+		7B567573256A0E7300EE237E /* dramaLIstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B567572256A0E7300EE237E /* dramaLIstView.swift */; };
+		7B567576256A0EB500EE237E /* dramaEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B567575256A0EB500EE237E /* dramaEditorView.swift */; };
+		7B567579256A0EF600EE237E /* chartview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B567578256A0EF600EE237E /* chartview.swift */; };
+		7B56757C256A101A00EE237E /* donutChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B56757B256A101A00EE237E /* donutChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,13 @@
 		7B2414F72561552200E3833C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B2414FA2561552200E3833C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7B2414FC2561552200E3833C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B274008256CE1CB00CE799B /* searchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchBar.swift; sourceTree = "<group>"; };
+		7B567568256A0DB300EE237E /* pieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pieChartView.swift; sourceTree = "<group>"; };
+		7B56756C256A0DFA00EE237E /* barGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = barGraphView.swift; sourceTree = "<group>"; };
+		7B567572256A0E7300EE237E /* dramaLIstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dramaLIstView.swift; sourceTree = "<group>"; };
+		7B567575256A0EB500EE237E /* dramaEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dramaEditorView.swift; sourceTree = "<group>"; };
+		7B567578256A0EF600EE237E /* chartview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chartview.swift; sourceTree = "<group>"; };
+		7B56757B256A101A00EE237E /* donutChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = donutChartView.swift; path = ../donutChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +66,15 @@
 		7B2414F22561551D00E3833C /* iOS_HW5 */ = {
 			isa = PBXGroup;
 			children = (
+				7B56757B256A101A00EE237E /* donutChartView.swift */,
+				7B567568256A0DB300EE237E /* pieChartView.swift */,
+				7B56756C256A0DFA00EE237E /* barGraphView.swift */,
 				7B2414F32561551D00E3833C /* iOS_HW5App.swift */,
 				7B2414F52561551D00E3833C /* ContentView.swift */,
+				7B567578256A0EF600EE237E /* chartview.swift */,
+				7B567575256A0EB500EE237E /* dramaEditorView.swift */,
+				7B274008256CE1CB00CE799B /* searchBar.swift */,
+				7B567572256A0E7300EE237E /* dramaLIstView.swift */,
 				7B2414F72561552200E3833C /* Assets.xcassets */,
 				7B2414FC2561552200E3833C /* Info.plist */,
 				7B2414F92561552200E3833C /* Preview Content */,
@@ -138,8 +159,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B567569256A0DB300EE237E /* pieChartView.swift in Sources */,
+				7B567576256A0EB500EE237E /* dramaEditorView.swift in Sources */,
+				7B567573256A0E7300EE237E /* dramaLIstView.swift in Sources */,
 				7B2414F62561551D00E3833C /* ContentView.swift in Sources */,
 				7B2414F42561551D00E3833C /* iOS_HW5App.swift in Sources */,
+				7B56756D256A0DFA00EE237E /* barGraphView.swift in Sources */,
+				7B56757C256A101A00EE237E /* donutChartView.swift in Sources */,
+				7B567579256A0EF600EE237E /* chartview.swift in Sources */,
+				7B274009256CE1CB00CE799B /* searchBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
