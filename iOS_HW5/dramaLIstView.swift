@@ -62,15 +62,23 @@ struct dramaList:View{
         UITableView.appearance().backgroundColor = .clear
         UITableViewCell.appearance().backgroundColor = .clear
     }
+    func fundIdx(drama:dramaInfo) -> Int {
+            for idx in 0...dramaData.mydramaInfo.count-1 {
+                if drama.id == dramaData.mydramaInfo[idx].id{
+                    return idx
+                }
+            }
+            return -1
+        }
     var body: some View{
         NavigationView{
             VStack{
                 SearchBar(text: $searchText)
                 //.background(Color(red:231/255, green:216/255, blue:201/255))
                 List{
-                    ForEach(filterWords.indices){(index) in
-                        NavigationLink(destination:dramaEditor(dramadata: dramaData, editDramaIndex:index)){
-                            dramaRow(drama:dramaData.mydramaInfo[index])
+                    ForEach(filterWords){(index) in
+                        NavigationLink(destination:dramaEditor(dramadata: dramaData, editDramaIndex:fundIdx(drama: index))){
+                            dramaRow(drama:index)
                         }
                         .listRowBackground(Color(red:238/255, green:228/255, blue:225/255))
                     }
