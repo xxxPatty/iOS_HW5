@@ -98,12 +98,12 @@ struct dramaList:View{
                             showDramaEditor=true
                         }, label:{
                             Image(systemName: "plus.circle.fill")
-                                .foregroundColor(Color(red:230/255, green:190/255, blue:174/255))
+                                //.foregroundColor(Color(red:230/255, green:190/255, blue:174/255))
                         })
                     }
                     ToolbarItem(placement:.navigationBarLeading){
                         EditButton()
-                            .foregroundColor(Color(red:230/255, green:190/255, blue:174/255))
+                            //.foregroundColor(Color(red:230/255, green:190/255, blue:174/255))
                     }
                 })
                 .sheet(isPresented: $showDramaEditor){

@@ -91,7 +91,7 @@ struct chartView: View {
         let total=dramaData.mydramaInfo.count
         completePercentage=0
         dramaTypeNum=[0, 0, 0, 0, 0, 0, 0, 0]
-        for index in 0...total-1{
+        for index in 0..<total{
             if dramaData.mydramaInfo[index].dramaType=="愛情"{
                 dramaTypeNum[0]+=1
             }else if dramaData.mydramaInfo[index].dramaType=="冒險"{
@@ -111,13 +111,20 @@ struct chartView: View {
             }
         }
         for index in 0...7{
-            dramaTypeNumPercentage[index] = dramaTypeNum[index] / Double(total) * 100
+            if dramaTypeNum[index] == 0 {
+                dramaTypeNumPercentage[index]=0
+            }else{
+                dramaTypeNumPercentage[index] = dramaTypeNum[index] / Double(total) * 100
+            }
+            
         }
-        for index in 0...total-1{
+        for index in 0..<total{
             if dramaData.mydramaInfo[index].done==true {
                 completePercentage+=1
             }
         }
-        completePercentage=completePercentage/Double(total)
+        if completePercentage != 0{
+            completePercentage=completePercentage/Double(total)
+        }
     }
 }

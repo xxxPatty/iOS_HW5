@@ -63,8 +63,11 @@ struct dramaEditor:View{
             })
         
         .onAppear(perform:{
+            
             if let editDramaIndex=editDramaIndex{
+
                 let editDrama=dramadata.mydramaInfo[editDramaIndex]
+
                 dramaName=editDrama.dramaName
                 dramaType=editDrama.dramaType
                 time=editDrama.time
@@ -72,9 +75,12 @@ struct dramaEditor:View{
                 done=editDrama.done
                 reflections=editDrama.reflections=="" ? "影評" : editDrama.reflections
                 scores=editDrama.scores
-                for i in 0...someDramaTypes.count-1{
-                    if editDrama.dramaType==someDramaTypes[i]{
-                        dramaTypeIndex=i
+                
+                if dramaTypeIndex == 0 {
+                    for i in 0...someDramaTypes.count-1{
+                        if editDrama.dramaType==someDramaTypes[i]{
+                            dramaTypeIndex=i
+                        }
                     }
                 }
             }
